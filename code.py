@@ -1,3 +1,5 @@
+import unittest
+
 # function to return the factorial of a number
 # Add comments
 def factorial(num):
@@ -30,7 +32,7 @@ def check_leap_year(year):
         else:
             #leap year will be true if year mod. 100 is zero, and year mod. 4 is zero
             isLeap = True
-            
+
     #OTHERWISE, return isLeap, which is set to false at the top of the function
     return isLeap
 
@@ -43,3 +45,17 @@ print("check_leap_year(2000): {}".format(check_leap_year(2000)))
 print("check_leap_year(1990): {}".format(check_leap_year(1990)))
 print("check_leap_year(2012): {}".format(check_leap_year(2012)))
 print("check_leap_year(2100): {}".format(check_leap_year(2100)))
+
+class test_cases(unittest.TestCase)
+
+    def test_factorial(self):
+        
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
+
+
+
+
+
+
