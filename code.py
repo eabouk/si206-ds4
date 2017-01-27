@@ -1,12 +1,17 @@
 # function to return the factorial of a number
 # Add comments
 def factorial(num):
+    #factorial of 1 is 1 
     ans = 1
     if num < 0:
         return None
+
+    #cannot do a factorial of a negative number
     elif num < 2:
         return ans
+
     else:
+        #multiply all the numbers in the range of the number given to the function
         for i in range(1, num + 1):
             ans = ans * i
         return ans
