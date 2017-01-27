@@ -21,11 +21,17 @@ def factorial(num):
 def check_leap_year(year):
     isLeap = False
     if (year % 4) == 0:
+        #if remainder for the year div. by 4 is zero, leap year
         if (year % 100) == 0:
+            #if remainder for year div. by 100 is zero, leap year
             if (year % 400) == 0:
+                #if remainder fro year div. by 400 is zero, leap year
                 isLeap = True
         else:
+            #leap year will be true if year mod. 100 is zero, and year mod. 4 is zero
             isLeap = True
+            
+    #OTHERWISE, return isLeap, which is set to false at the top of the function
     return isLeap
 
 print("factorial(0): {}".format(factorial(0)))
