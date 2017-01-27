@@ -53,6 +53,12 @@ class test_cases(unittest.TestCase):
         self.assertEqual(factorial(1), 1)
         self.assertEqual(factorial(-10), None)
 
+    def test_check_leap(self):
+        self.assertEqual(check_leap_year(2000), True)
+        self.assertEqual(check_leap_year(2020), True)
+        self.assertEqual(check_leap_year(2014), False)
+        self.assertEqual(check_leap_year(2016), True)
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 
